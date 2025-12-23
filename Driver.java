@@ -1,16 +1,27 @@
 public class Driver {
     // atrrbuvites
 
-    private String name;
-    private int age;
-    private String team;
-    private String number;
+    public String name;
+    public int age;
+    public String team;
+    public String number;
+
    // private list<Lap> laps;
 
-   private int totalPoints;
+ //  private int totalPoints;
 
 
    //constructor 
+
+   void laptime(){
+
+   }
+
+  void  finishspot(){
+
+   }
+
+
 
    public Driver(String name, int age String team, String number){
         this.name = name;
@@ -26,19 +37,23 @@ public class Driver {
 
    }
 
+   //abstration
+   driver.patimr();
 
 
     public double getAvgLapTime(){
 
     }
 
-    public int getOvertakes(){
-
-    }
-
+  
 
 
     public static void main(String[] args) {
+        Driver driver = new Driver();
+
+
+
+
         System.out.println("Hi driver");
     }
     
