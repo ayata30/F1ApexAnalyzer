@@ -1,29 +1,39 @@
 public class Driver {
     // atrrbuvites
 
-    public String name;
-    public int age;
-    public String team;
-    public String number;
+    private String name;
+    private int age;
+    private String team;
+    private int number;
 
    // private list<Lap> laps;
 
  //  private int totalPoints;
 
 
-   //constructor 
+   //constructor - unqiue methods - used to defne a properties of an object
+Driver(){
+    System.out.println("New driver created");
 
-   void laptime(){
+
+}
+// overloading : call the same methof witha differnt argument
+Driver(String name){
+    System.out.println("Driver name: "+ name);
+}
+   //methods
+   void lapTime(){
 
    }
 
-  void  finishspot(){
+  void placeFinish(){
+  }
+  void points(){
 
-   }
+}}
 
 
-
-   public Driver(String name, int age String team, String number){
+  /* public Driver(String name, int age String team, String number){
         this.name = name;
         this.age = age;
         this.team = team;
@@ -60,3 +70,5 @@ public class Driver {
 }
 
 // implemnet constuctors here
+
+*/
