@@ -1,7 +1,8 @@
+import java.util.Scanner;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 ///import javax.swing.BorderFactory;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
@@ -10,10 +11,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-       
+         Scanner scanner = new Scanner(System.in);
        // creating a new driver - instianting the object
        Driver name1 = new Driver();
        Driver name2 = new Driver("leclerc");
+
+       
+       System.out.println("Enter a drivers name: ");
+       String name = scanner.next();
+       System.out.println("Hello " + name);
+   
+       
+       //String name = scanner.nextLine();
+ 
     
        
        
@@ -53,10 +63,13 @@ public class Main {
           //  JPanel controlPanel = new JPanel();
 
 
+
+
+          
+ scanner.close();
         
     }     // the control panel with dropdwons and buttons
-    
-          
+             
 
 
           

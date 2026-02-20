@@ -10,65 +10,61 @@ public class Driver {
 
  //  private int totalPoints;
 
-
-   //constructor - unqiue methods - used to defne a properties of an object
-Driver(){
-    System.out.println("New driver created");
+    private int points;
 
 
-}
-// overloading : call the same methof witha differnt argument
-Driver(String name){
-    System.out.println("Driver name: "+ name);
-}
-   //methods
-   void lapTime(){
-
-   }
-
-  void placeFinish(){
-  }
-  void points(){
-
-}}
-
-
-  /* public Driver(String name, int age String team, String number){
+    public Driver (String name, String team, int number, int age){
+        if (name == null || name.isEmpty()){
+            throw new IllegalArgumentException("Name cannot be empty!");
+        }
         this.name = name;
-        this.age = age;
         this.team = team;
         this.number = number;
-   
+        this.points = 0;
     }
 
-    //method  to give dirver pioints
-   public int addPoints(int increment){
-    points = increment++;
+    //behvaior 
 
-   }
+    public void addPoints(int pointsToAdd){
+        if(pointsToAdd < 0){
+            throw new IllegalArgumentException("Points cannot be negative");
 
-   //abstration
-   driver.patimr();
+        } 
+        this.points += pointsToAdd;
+    }
 
+    // getters 
 
-    public double getAvgLapTime(){
+    public String getName(String name){
+        return name;
+    }
+
+    public String getTeam(String team){
+        return team;
+    }
+
+    public int getNumber(int number){
+        return number;
 
     }
 
-  
-
-
-    public static void main(String[] args) {
-        Driver driver = new Driver();
-
-
-
-
-        System.out.println("Hi driver");
+    public int getPoints(int points){
+        return points;
     }
-    
+
+    @Override
+    public String tostring(){
+        return name + " (" + team + ") - #" + number + "| Points: "+ points;
+    }
+
+
 }
 
-// implemnet constuctors here
 
-*/
+
+
+   //constructor - unqiue methods - used to defne a properties of an object
+
+// overloading : call the same methof witha differnt argument
+
+  

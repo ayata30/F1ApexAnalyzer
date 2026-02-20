@@ -9,3 +9,11 @@ public class Car {
         
     }
 }
+
+
+
+timer timer = new Timer (30, e -> {
+    carX =+ 2;
+    repaint();
+    
+})
